@@ -1,7 +1,7 @@
 # jQuery.tokenize
 jQuery.tokenize -- add a token input to all forms in an application
 
-Instructions:
+# Instructions:
 
 1. Add a way to generate a CSRF token when any page of your application is loaded and set that value to a cookie.
 
