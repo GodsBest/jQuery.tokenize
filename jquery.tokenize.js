@@ -1,6 +1,7 @@
 //small form tokenize utility
 $(function() { 
 	;(function($) {
+		//the plugin
 		$.fn.tokenize = function() {
 			return this.each(function() {
 				if(!$.cookie) {
@@ -18,6 +19,8 @@ $(function() {
 			});
 		}
 	})(jQuery);
+
+	//plugin initialization
 	if(!$.cookie) {
     	var script = document.createElement('script');
 		script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js';
