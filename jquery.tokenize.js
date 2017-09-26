@@ -13,7 +13,7 @@ $(function() {
 						//console.log('Missing token!');
 					} else {
 						var input = $('<input type="hidden" name="token"/>').val(stoken);
-						$(this).prepend(input);
+						$(this).prepend( input );
 					}
 				}
 			});
