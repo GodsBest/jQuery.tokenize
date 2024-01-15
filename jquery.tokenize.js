@@ -22,12 +22,12 @@ $(function() {
 
 	//plugin initialization
 	if(!$.cookie) {
-    	var script = document.createElement('script');
+    		var script = document.createElement('script');
 		script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js';
-    	script.onload = goAhead;
-    	document.head.appendChild(script);
+    		script.onload = goAhead;
+    		document.head.appendChild(script);
 	} else {
-    	goAhead();
+    		goAhead();
   	}
 	function goAhead() {
 		$('form:not(:has(input[name="token"]))').tokenize();
